@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Feedback</title>
+    <style>
+        .error {
+            color: red;
+        }
+
+        .strength {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<form id="form" action="#" onsubmit="return validateForm()">
+
+    <div class="input">
+        <label for="name">Full Name:</label>
+        <input type="text"
+               id="name"
+               name="name"
+               required
+               oninput="nameValidation()">
+        <div class="error" id="nameError"></div>
+    </div><br><br>
+
+    <div class="input">
+        <label for="password">Password:</label>
+        <input type="password"
+               id="password"
+               name="password"
+               required
+               oninput="passwordValidation()">
+        <div class="strength" id="passwordStrength"></div>
+    </div><br><br>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

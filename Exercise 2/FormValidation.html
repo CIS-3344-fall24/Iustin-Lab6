@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+
+    <style>
+
+        .input .error{
+            color: red;
+            margin-bottom: 5px;
+            margin-left: 10px;
+        }
+    </style>
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<h1>Form Validation</h1>
+
+<!--Create Form-->
+<form id="form" action="#" onsubmit="return validateForm()">
+
+    <div class="input">
+        <label for="name">Full Name:</label>
+        <input type="text"
+               id="name"
+               name="name"
+               required
+               oninput="clearError()">
+        <div class="error"></div>
+
+    </div><br><br>
+
+    <div class="input">
+        <label for="email">E-mail:</label>
+        <input type="email"
+               id="email"
+               name="email"
+               required>
+        <div class="error"></div>
+    </div><br><br>
+
+    <div class="input">
+        <label for="phone">Phone Number:</label>
+        <input type="tel"
+               id="phone"
+               name="phone number"
+               required
+               oninput="clearError()">
+        <div class="error"></div>
+    </div><br><br>
+
+    <div class="input">
+        <label for="password">Password:</label>
+        <input type="password"
+               id="password"
+               name="password"
+               required
+               oninput="clearError()">
+        <div class="error"></div>
+    </div><br><br>
+
+    <div class="input">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password"
+               id="confirmPassword"
+               name="confirmPassword"
+               required
+               oninput="clearError()">
+        <div class="error"></div>
+    </div><br><br>
+
+    <div class="input">
+        <label for="age">Age:</label>
+        <input type="number"
+               id="age"
+               name="age"
+               required
+               oninput="clearError()">
+        <div class="error"></div>
+    </div><br><br>
+
+    <div class="input">
+        <label for="website">Enter your Website URL:</label>
+        <input type="url"
+               id="website"
+               name="website"
+               required
+               oninput="clearError()">
+        <div class="error"></div>
+    </div><br><br>
+
+    <button type="submit">SUBMIT</button>
+</form>
+
+</body>
+</html>
